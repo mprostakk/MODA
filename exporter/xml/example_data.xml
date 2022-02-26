@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Orders xmlns="https://www.ia.pw.edu.pl/MODA" xsi:schemaLocation="https://www.ia.pw.edu.pl/MODA schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Order id="4607" created_date="1993-08-21T08:38:36.81" total_cost="8524240.23" state="delivered">
+    <destination_address>
+      <address>
+        <country>Poland</country>
+        <city>Warszawa</city>
+        <state>mazowieckie</state>
+        <zip_code>00-000</zip_code>
+        <street_name>Poznańska</street_name>
+        <building_number>51</building_number>
+      </address>
+    </destination_address>
+    <Ordered_Dish quantity="143" cost="530.23">
+      <Dish name="Hamburger" price="50.23">
+        <dish_type>
+            <name>mięsne</name>
+        </dish_type>
+        <Restaurant restaurant_id="2176" name="Między Bułkami" nip="ABCDEFGHIJ">
+          <invoice_address>
+            <address>
+              <country>Poland</country>
+              <city>Kraków</city>
+              <state>małopolskie</state>
+              <zip_code>01-005</zip_code>
+              <street_name>Wierzbowa</street_name>
+              <building_number>15a</building_number>
+            </address>
+          </invoice_address>
+        </Restaurant>
+      </Dish>
+    </Ordered_Dish>
+    <Ordered_Dish quantity="2791" cost="2650500.23">
+      <Dish name="Kebab XXL" price="8449180.23">
+        <dish_type>
+            <name>mięsne</name>
+            <name>tureckie</name>
+        </dish_type>
+      </Dish>
+    </Ordered_Dish>
+    <Ordered_Dish quantity="6260" cost="5896180.23">
+      <Dish name="Sałatka XYZ" price="9686820.23">
+        <dish_type>
+            <name>wegetariańskie</name>
+        </dish_type>
+      </Dish>
+    </Ordered_Dish>
+    <Ordered_Dish quantity="7026" cost="5062910.23">
+      <Dish name="Pierogi ruskie (duża porcja)" price="5648410.23">
+        <dish_type />
+        <description>Lorem ipsum dolor sit amet</description>
+      </Dish>
+    </Ordered_Dish>
+    <Ordered_Dish quantity="3965" cost="6852490.23">
+      <Dish name="Zestaw surówek" price="5110090.23">
+        <dish_type />
+        <description>Lorem ipsum dolor sit amet</description>
+      </Dish>
+    </Ordered_Dish>
+    <Deliverer user_id="2436" />
+    <Customer user_id="897" nip="ABCDEFGHIJ">
+      <invoice_address>
+        <address>
+          <country>Poland</country>
+          <city>Kraków</city>
+          <state>małopolskie</state>
+          <zip_code>05-001</zip_code>
+          <street_name>Wesoła</street_name>
+          <building_number>128a</building_number>
+        </address>
+      </invoice_address>
+    </Customer>
+    <user_note>Klatka 8, II piętro</user_note>
+    <external_invoice_id>f2558774-77ce-11ec-90d6-0242ac120003</external_invoice_id>
+    <external_payment_id>fa18b97c-77ce-11ec-90d6-0242ac120003</external_payment_id>
+  </Order>
+</Orders>

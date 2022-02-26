@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://www.ia.pw.edu.pl/MODA"
+            targetNamespace="https://www.ia.pw.edu.pl/MODA" elementFormDefault="qualified">
+  <xsd:element name="Orders">
+    <xsd:annotation>
+      <xsd:documentation>A sample element</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Order" maxOccurs="unbounded">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="destination_address">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="address" type="Address"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="Ordered_Dish" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Dish">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="dish_type" maxOccurs="1" minOccurs="1">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element name="name" type="xsd:string" maxOccurs="unbounded" minOccurs="0"/>
+                              </xsd:sequence>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element name="Restaurant" minOccurs="0" maxOccurs="1">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element name="invoice_address">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="address" type="Address"/>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element name="description" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                                <xsd:element name="homepage_url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                              </xsd:sequence>
+                              <xsd:attribute name="restaurant_id" type="xsd:integer" use="required"/>
+                              <xsd:attribute name="name" type="xsd:string" use="required"/>
+                              <xsd:attribute name="nip" type="Nip" use="required"/>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element name="description" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        </xsd:sequence>
+                        <xsd:attribute name="name" type="xsd:string" use="required"/>
+                        <xsd:attribute name="price" type="Money" use="required"/>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                  <xsd:attribute name="quantity" use="required" type="xsd:nonNegativeInteger"/>
+                  <xsd:attribute name="cost" type="Money" use="required"/>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="Deliverer">
+                <xsd:complexType>
+                  <xsd:attribute name="user_id" type="xsd:integer" use="required"/>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="Customer">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="invoice_address">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="address" type="Address"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                  <xsd:attribute name="user_id" type="xsd:integer" use="required"/>
+                  <xsd:attribute name="nip" use="required" type="Nip"/>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element name="user_note" type="xsd:string"/>
+              <xsd:element name="external_invoice_id" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+              <xsd:element name="external_payment_id" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            </xsd:sequence>
+            <xsd:attribute name="id" type="xsd:integer" use="required"/>
+            <xsd:attribute name="created_date" type="xsd:dateTime" use="required"/>
+            <xsd:attribute name="total_cost" type="Money" use="required"/>
+            <xsd:attribute name="state" type="Order_State" use="required"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:simpleType name="Order_State">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="new"/>
+      <xsd:enumeration value="paid"/>
+      <xsd:enumeration value="ready_for_deliverer"/>
+      <xsd:enumeration value="in_transport"/>
+      <xsd:enumeration value="delivered"/>
+      <xsd:enumeration value="rejected"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Nip">
+    <xsd:restriction base="xsd:string">
+      <xsd:length value="10"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Money">
+    <xsd:restriction base="xsd:decimal">
+      <xsd:fractionDigits value="2"/>
+      <xsd:minInclusive value="0"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="Address">
+    <xsd:sequence>
+      <xsd:element name="country" type="xsd:string"/>
+      <xsd:element name="city" type="xsd:string"/>
+      <xsd:element name="state" type="xsd:string"/>
+      <xsd:element name="zip_code" type="xsd:string"/>
+      <xsd:element name="street_name" type="xsd:string"/>
+      <xsd:element name="building_number" type="xsd:string"/>
+      <xsd:element name="apartment_number" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

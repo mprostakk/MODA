@@ -1,0 +1,6 @@
+cx-Oracle==8.3.0
+elementpath==2.4.0
+python-dotenv==0.19.2
+xmlschema==1.9.2
+lxml==4.7.1
+requests==2.27.1

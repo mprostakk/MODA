@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "@types/*", "./src/*.d.ts"]
+    },
+    "typeRoots": ["./@types", "./src/*.d.ts"]
+  },
+  "include": [
+    "src/**/*",
+    "src/**/*.d.ts",
+    "@types",
+    "src/bin/config/config.ts",
+    "../node_modules/@types/node/index.d.ts",
+    "@types"
+  ],
+  "exclude": ["node_modules"]
+}

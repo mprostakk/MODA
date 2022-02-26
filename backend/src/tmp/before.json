@@ -1,0 +1,198 @@
+[
+  {
+    "destination_address": {
+      "address": {
+        "country": "Poland",
+        "city": "Warszawa",
+        "state": "mazowieckie",
+        "zip_code": "00-000",
+        "street_name": "Poznańska",
+        "building_number": 51
+      }
+    },
+    "Ordered_Dish": [
+      {
+        "Dish": {
+          "dish_type": { "name": "mięsne" },
+          "Restaurant": {
+            "invoice_address": {
+              "address": {
+                "country": "Poland",
+                "city": "Kraków",
+                "state": "małopolskie",
+                "zip_code": "01-005",
+                "street_name": "Wierzbowa",
+                "building_number": "15a"
+              }
+            },
+            "restaurant_id": "2176",
+            "name": "Między Bułkami",
+            "nip": "ABCDEFGHIJ"
+          },
+          "name": "Hamburger",
+          "price": "50.23"
+        },
+        "quantity": "143",
+        "cost": "530.23"
+      },
+      {
+        "Dish": {
+          "dish_type": { "name": ["mięsne", "tureckie"] },
+          "name": "Kebab XXL",
+          "price": "8449180.23"
+        },
+        "quantity": "2791",
+        "cost": "2650500.23"
+      },
+      {
+        "Dish": {
+          "dish_type": { "name": "wegetariańskie" },
+          "name": "Sałatka XYZ",
+          "price": "9686820.23"
+        },
+        "quantity": "6260",
+        "cost": "5896180.23"
+      },
+      {
+        "Dish": {
+          "dish_type": "",
+          "description": "Lorem ipsum dolor sit amet",
+          "name": "Pierogi ruskie (duża porcja)",
+          "price": "5648410.23"
+        },
+        "quantity": "7026",
+        "cost": "5062910.23"
+      },
+      {
+        "Dish": {
+          "dish_type": "",
+          "description": "Lorem ipsum dolor sit amet",
+          "name": "Zestaw surówek",
+          "price": "5110090.23"
+        },
+        "quantity": "3965",
+        "cost": "6852490.23"
+      }
+    ],
+    "Deliverer": { "user_id": "2436" },
+    "Customer": {
+      "invoice_address": {
+        "address": {
+          "country": "Poland",
+          "city": "Kraków",
+          "state": "małopolskie",
+          "zip_code": "05-001",
+          "street_name": "Wesoła",
+          "building_number": "128a"
+        }
+      },
+      "user_id": "897",
+      "nip": "ABCDEFGHIJ"
+    },
+    "user_note": "Klatka 8, II piętro",
+    "external_invoice_id": "f2558774-77ce-11ec-90d6-0242ac120003",
+    "external_payment_id": "fa18b97c-77ce-11ec-90d6-0242ac120003",
+    "id": "4607",
+    "created_date": "1993-08-21T08:38:36.81",
+    "total_cost": "8524240.23",
+    "state": "delivered"
+  },
+  {
+    "destination_address": {
+      "address": {
+        "country": "NONIEZLE",
+        "city": "Warszawa",
+        "state": "mazowieckie",
+        "zip_code": "00-000",
+        "street_name": "Poznańska",
+        "building_number": 51
+      }
+    },
+    "Ordered_Dish": [
+      {
+        "Dish": {
+          "dish_type": { "name": "mięsne" },
+          "Restaurant": {
+            "invoice_address": {
+              "address": {
+                "country": "Poland",
+                "city": "Kraków",
+                "state": "małopolskie",
+                "zip_code": "01-005",
+                "street_name": "Wierzbowa",
+                "building_number": "15a"
+              }
+            },
+            "restaurant_id": "2176",
+            "name": "Między Bułkami",
+            "nip": "ABCDEFGHIJ"
+          },
+          "name": "Hamburger",
+          "price": "50.23"
+        },
+        "quantity": "143",
+        "cost": "530.23"
+      },
+      {
+        "Dish": {
+          "dish_type": { "name": ["mięsne", "tureckie"] },
+          "name": "Kebab XXL",
+          "price": "8449180.23"
+        },
+        "quantity": "2791",
+        "cost": "2650500.23"
+      },
+      {
+        "Dish": {
+          "dish_type": { "name": "wegetariańskie" },
+          "name": "Sałatka XYZ",
+          "price": "9686820.23"
+        },
+        "quantity": "6260",
+        "cost": "5896180.23"
+      },
+      {
+        "Dish": {
+          "dish_type": "",
+          "description": "Lorem ipsum dolor sit amet",
+          "name": "Pierogi ruskie (duża porcja)",
+          "price": "5648410.23"
+        },
+        "quantity": "7026",
+        "cost": "5062910.23"
+      },
+      {
+        "Dish": {
+          "dish_type": "",
+          "description": "Lorem ipsum dolor sit amet",
+          "name": "Zestaw surówek",
+          "price": "5110090.23"
+        },
+        "quantity": "3965",
+        "cost": "6852490.23"
+      }
+    ],
+    "Deliverer": { "user_id": "2436" },
+    "Customer": {
+      "invoice_address": {
+        "address": {
+          "country": "tesssst",
+          "city": "Kraków",
+          "state": "małopolskie",
+          "zip_code": "05-001",
+          "street_name": "Wesoła",
+          "building_number": "128a"
+        }
+      },
+      "user_id": "897",
+      "nip": "ABCDEFGHIJ"
+    },
+    "user_note": "Klatka 8, II piętro",
+    "external_invoice_id": "f2558774-77ce-11ec-90d6-0242ac120003",
+    "external_payment_id": "fa18b97c-77ce-11ec-90d6-0242ac120003",
+    "id": "4607",
+    "created_date": "1993-08-21T08:38:36.81",
+    "total_cost": "8524240.23",
+    "state": "delivered"
+  }
+]

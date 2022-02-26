@@ -1,0 +1,39 @@
+{
+  "name": "MODA",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/app.js",
+    "dev": "nodemon --files"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/express-xml-bodyparser": "^0.3.2",
+    "@types/helmet": "^4.0.0",
+    "@types/mongodb": "^4.0.7",
+    "@types/mongoose": "^5.11.97",
+    "@types/xsd-schema-validator": "^0.5.4",
+    "cors": "^2.8.5",
+    "dotenv": "^14.3.0",
+    "express": "^4.17.2",
+    "express-validation": "^3.0.8",
+    "express-xml-bodyparser": "^0.3.0",
+    "fast-xml-parser": "^4.0.1",
+    "fs": "0.0.1-security",
+    "helmet": "^5.0.2",
+    "joi": "^17.5.0",
+    "mongodb": "^4.3.1",
+    "mongoose": "^6.1.8",
+    "nodemon": "^2.0.15",
+    "process": "^0.11.10",
+    "ts-node": "^10.4.0",
+    "tsc": "^2.0.4",
+    "typescript": "^4.5.5",
+    "xsd-schema-validator": "^0.7.0"
+  }
+}
